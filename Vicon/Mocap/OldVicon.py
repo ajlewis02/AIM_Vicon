@@ -948,11 +948,11 @@ class ViconOld(object):
             if category not in other.data_dict:
                 print("Category " + category + " missing!")
                 flag = True
-            for subject, fields in subjects.iteritems():
+            for subject, fields in subjects.items():
                 if subject not in other.data_dict[category]:
                     print("Subject " + subject + " in category " + category + " missing!")
                     flag = True
-                for field, f_vals in fields.iteritems():
+                for field, f_vals in fields.items():
                     if field not in other.data_dict[category][subject]:
                         flag = True
                         print("Field " + field + " of subject " + subject + " in category " + category + " missing!")
