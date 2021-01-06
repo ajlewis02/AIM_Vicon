@@ -417,7 +417,7 @@ class ViconOld(object):
         :return:
         """
         if "Model Outputs" in self.data_dict:
-            self._model_output = modeloutput.ModelOutput(self.data_dict["Model Outputs"], self.joint_names)
+            self._model_output = modeloutput.ModelOutput(self.data_dict["Model Outputs"])
             if verbose:
                 print("Model Outputs generated")
         elif verbose:
